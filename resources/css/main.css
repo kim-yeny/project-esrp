@@ -1,0 +1,372 @@
+@font-face {
+    font-family: '87MMILSANG';
+    src: url("87MMILSANG-Regular.woff") format('truetype');
+}
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: '87MMILSANG';
+}
+
+body,
+html {
+    -webkit-overflow-scrolling: none;
+    overflow-x: hidden;
+    overscroll-behavior: none;
+    font-size: 20px;
+    scroll-behavior: smooth;
+}
+
+/* Fixed Menu-bar */
+nav {
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    padding: 0 100px;
+    box-sizing: border-box;
+    background: transparent;
+    z-index: 10;
+}
+
+nav div a {
+    padding: 5px 20px;
+    transition: all 1s;
+}
+
+nav div a span{
+    position: relative;
+}
+
+nav div a:hover span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #aaf0d1;
+    z-index: 10;
+}
+
+nav div a:last-of-type {
+    margin: 0 30px 0 0;
+}
+
+nav i {
+    display: none !important;
+}
+
+.down {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 10px 20px rgba(100, 100, 100, 0.1);
+    transition: all 0.3s;
+}
+
+/* Intro */
+header {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 770px;
+    padding: 100px 0 0 150px;
+    box-sizing: border-box;
+    background: url("http://placehold.it/1920x770") no-repeat center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header h1 span {
+    margin: 10px 0 70px 0;
+    display: block;
+    font-size: 1.5rem;
+}
+
+header div {
+    align-items: center;
+}
+
+header p {
+    margin: 0 0 0 20px;
+    font-size: 1rem;
+}
+
+button.join {
+    width: 180px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    /* background-image: linear-gradient(-20deg, #aaf0d1 0%, #8ddad5 100%); */
+    background: #fff;
+    box-shadow: 0 0 10px #ccc;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+
+button.join:hover {
+    box-shadow: 0 0 10px #66D9B6;
+    background: #66D9B6;
+    color: #fff;
+}
+
+/* Section */
+section {
+    padding: 120px 0;
+    text-align: center;
+}
+
+section h1 {
+    font-size: 2.5rem;
+}
+
+section h1 span {
+    display: block;
+    font-size: 1rem;
+}
+
+.overview {
+    justify-content: center;
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 250px 50px 0;
+    text-align: left;
+}
+
+.overview:nth-of-type(2) {
+    padding: 250px 50px;
+}
+
+.overview h1 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.overview p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.overview .box-img {
+    align-items: center;
+    z-index: -5;
+}
+
+.overview .box-img img:nth-of-type(2) {
+    margin: 0 0 0 20px;
+}
+
+.overview .box-txt {
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+}
+
+.overview:nth-of-type(1) .box-img {
+    margin-right: 100px;
+}
+
+.overview:nth-of-type(2) .box-img {
+    margin-left: 100px;
+}
+
+.overview .box-txt h1 {
+    position: relative;
+}
+
+.overview .box-txt p {
+    text-align: justify;
+}
+
+.overview .box-txt h1::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: -20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #aaf0d1;
+    z-index: -1;
+}
+
+.overview .circle {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: #eee;
+    border-radius: 50%;
+    z-index: -10;
+}
+
+.overview:nth-of-type(1) .circle {
+    left: -150px;
+}
+
+.overview:nth-of-type(2) .circle {
+    right: -150px;
+}
+
+#demo h1,
+#review h1 {
+    margin-bottom: 70px;
+    letter-spacing: 0.3rem;
+}
+
+#demo span,
+#review span {
+    margin-top: 10px;
+    font-weight: normal;
+    color: #777;
+    letter-spacing: 0;
+}
+
+#demo {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ccc;
+}
+
+#demo video {
+    width: 50%;
+    border-radius: 30px;
+}
+
+#review > div {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+#review .card {
+    width: 350px;
+    height: 450px;
+    margin: 20px;
+    padding: 60px 50px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background: #fff;
+    box-shadow: 0 0 30px #ddd;
+    transition: all 0.5s;
+}
+
+#review .on {
+    box-shadow: 0 0 50px #66D9B6;
+}
+
+#review .card b {
+    display: block;
+    margin: 20px 0;
+    font-size: 1rem;
+}
+
+#review .card p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+}
+
+#review > a p {
+    display: inline-block;
+    margin-top: 50px;
+    font-weight: normal;
+    color: #aaa;
+}
+
+#review > a span {
+    margin-left: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+#review > a:hover span {
+    color: #66D9B6;
+}
+  
+#subscribe {
+    padding: 50px 100px 200px;
+}
+
+#subscribe > div {
+    justify-content: center;
+    align-items: center;
+    /* width: 70%;/ */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    box-sizing: border-box;
+    border-radius: 150px;
+    background-image: linear-gradient(20deg, #aaf0d1 0%, #8ddad5 100%);
+    box-shadow: 5px 5px 50px #ccc;
+}
+
+#subscribe > div > div {
+    width: 50%;
+    margin-right: 50px;
+    text-align: left;
+}
+
+#subscribe h1 {
+    font-size: 1.5rem;
+}
+
+#subscribe span {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+}
+
+#subscribe input[type=text] {
+    width: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 3px solid #fff;
+    background: rgba(255, 255, 255, 0.5);
+    transition: all 0.5s;
+}
+
+#subscribe input[type=text]:focus,
+#subscribe input[type=text]:hover {
+    background: #fff;
+}
+
+#subscribe button {
+    width: 250px;
+    height: 75px;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    background: none;
+    font-size: 1rem;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#subscribe button:hover {
+    background: #fff;
+    font-weight: bold;
+    color: #66D9B6;
+}
+
+footer {
+    padding: 50px 0;
+    background: #333;
+    text-align: center;
+}
+
+footer a,
+footer p {
+    color: #777;
+    font-size: 0.8rem;
+}
+
+footer i {
+    margin: 30px 2.5px;
+}

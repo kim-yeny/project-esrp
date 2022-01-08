@@ -1,0 +1,112 @@
+/* Tablet ver. */
+@media(min-width : 768px) and (max-width : 1024px) {
+
+    * {
+        color: blue;
+    }
+
+    html {
+        font-size: 18px;
+    }
+
+    nav {
+        display: none !important;
+    }
+
+    header {
+        /* background: url("http://placehold.it/1024x770") no-repeat center; */
+        height: 500px;
+        padding: 0 0 0 50px;
+    }
+
+    /* Section */
+    section {
+        padding: 100px 0;
+    }
+
+    .overview {
+        flex-direction: column;
+        align-items: center;
+        max-width: 80%;
+        padding: 150px 0 0;
+    }
+
+    .overview:nth-of-type(2) {
+        padding: 200px 0;
+    }
+
+    .overview .box-img {
+        justify-content: center;
+    }
+
+    .overview:nth-of-type(1) .box-img {
+        left: 0;
+        bottom: 100px;
+        margin-right: 0;
+    }
+    
+    .overview:nth-of-type(2) .box-img {
+        right: 0;
+        bottom: -100px;
+        margin-left: 0;
+    }
+
+    .overview .box-txt {
+        position: absolute;
+        width: 50%;
+    }
+
+    .overview .circle {
+        width: 500px;
+        height: 500px;
+    }
+
+    .overview:nth-of-type(1) .circle {
+        left: -200px;
+    }
+
+    .overview:nth-of-type(2) .circle {
+        right: -200px;
+    }
+
+    #demo h1,
+    #review h1 {
+        margin-bottom: 50px;
+    }
+
+    #demo video {
+        width: 80%;
+    }
+
+    #review > div {
+        max-width: 90%;
+    }
+
+    #review .card {
+        width: 300px;
+        height: 400px;
+        margin: 0 20px 20px 0;
+        padding: 50px 30px 30px;
+    }
+
+    #subscribe {
+        padding: 20px 0 0 0;
+    }
+
+    #subscribe > div {
+        width: 100%;
+        padding: 50px 70px;
+        border-radius: 0;
+        box-shadow: 0 -30px 30px #eee;
+    }
+
+    #subscribe > div > div {
+        width: 70%;
+        margin-right: 50px;
+    }
+
+    #subscribe button {
+        font-size: 1.2rem;
+    }
+
+}
