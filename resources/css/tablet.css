@@ -14,7 +14,7 @@
     }
 
     header {
-        /* background: url("http://placehold.it/1024x770") no-repeat center; */
+        /* background: url("https://via.placeholder.com/1024x770") no-repeat center; */
         height: 500px;
         padding: 0 0 0 50px;
     }
@@ -80,32 +80,29 @@
 
     #review > div {
         max-width: 90%;
+        flex-wrap: wrap;
     }
 
     #review .card {
         width: 300px;
-        height: 400px;
+        max-height: 500px;
+        min-height: fit-content;
         margin: 0 20px 20px 0;
-        padding: 50px 30px 30px;
+        padding: 50px 30px;
     }
 
-    #subscribe {
+    #download {
         padding: 20px 0 0 0;
     }
 
-    #subscribe > div {
+    #download > div {
         width: 100%;
-        padding: 50px 70px;
+        padding: 50px;
         border-radius: 0;
         box-shadow: 0 -30px 30px #eee;
     }
 
-    #subscribe > div > div {
-        width: 70%;
-        margin-right: 50px;
-    }
-
-    #subscribe button {
+    #download a {
         font-size: 1.2rem;
     }
 

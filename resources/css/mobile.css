@@ -14,7 +14,7 @@
     }
 
     header {
-        /* background: url("http://placehold.it/1024x770") no-repeat center; */
+        /* background: url("https://via.placeholder.com/1024x770") no-repeat center; */
         height: 500px;
         padding: 100px 50px;
     }
@@ -117,42 +117,43 @@
         width: 80%;
     }
 
+    #review > div {
+        flex-wrap: wrap;
+    }
+
     #review .card {
         width: 300px;
-        height: fit-content;
+        max-height: fit-content;
+        min-height: fit-content;
         margin: 20px;
         padding: 50px 30px;
         box-sizing: content-box;
     }
 
-    #subscribe {
+    #download {
         padding: 20px 0 0 0;
     }
 
-    #subscribe > div {
+    #download > div {
         flex-direction: column;
         width: 100%;
-        padding: 50px 20px;
+        padding: 50px;
         border-radius: 0;
         box-shadow: 0 -30px 30px #eee;
     }
 
-    #subscribe > div > div {
-        width: 80%;
-        margin-right: 0;
+    #download > div > div {
+        max-width: 100%;
+        margin: 0 0 30px 0;
     }
 
-    #subscribe h1 {
-        margin-bottom: 30px;
-    }
-
-    #subscribe input[type=text] {
+    #download input[type=text] {
         width: 100%;
         margin-bottom: 20px;
     }
 
-    #subscribe button {
-        width: 80%;
+    #download a {
+        width: 100%;
         font-size: 1.2rem;
     }
 

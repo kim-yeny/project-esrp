@@ -74,7 +74,7 @@ header {
     height: 770px;
     padding: 100px 0 0 150px;
     box-sizing: border-box;
-    background: url("https://placehold.it/1920x770") no-repeat center;
+    background: url("https://via.placeholder.com/1920x770") no-repeat center;
 }
 
 header h1 {
@@ -241,24 +241,25 @@ section h1 span {
 
 #review > div {
     justify-content: center;
-    flex-wrap: wrap;
+    width: 95%;
     margin: 0 auto;
 }
 
 #review .card {
     width: 350px;
-    height: 450px;
+    max-height: 550px;
+    min-height: 450px;
     margin: 20px;
     padding: 60px 50px;
     box-sizing: border-box;
     border-radius: 30px;
     background: #fff;
-    box-shadow: 0 0 30px #ddd;
+    box-shadow: 0 0 20px #ddd;
     transition: all 0.5s;
 }
 
 #review .on {
-    box-shadow: 0 0 50px #66D9B6;
+    box-shadow: 0 0 30px #66D9B6;
 }
 
 #review .card b {
@@ -290,40 +291,40 @@ section h1 span {
     color: #66D9B6;
 }
   
-#subscribe {
-    padding: 50px 100px 200px;
+#download {
+    padding: 0 100px 130px;
 }
 
-#subscribe > div {
-    justify-content: center;
+#download > div {
+    justify-content: space-between;
     align-items: center;
     /* width: 70%;/ */
     max-width: 1200px;
     margin: 0 auto;
-    padding: 50px;
+    padding: 50px 120px;
     box-sizing: border-box;
     border-radius: 150px;
     background-image: linear-gradient(20deg, #aaf0d1 0%, #8ddad5 100%);
-    box-shadow: 5px 5px 50px #ccc;
+    box-shadow: 5px 5px 30px #ccc;
 }
 
-#subscribe > div > div {
-    width: 50%;
-    margin-right: 50px;
+#download > div > div {
+    max-width: 65%;
+    margin: 0 50px 0 0;
     text-align: left;
 }
 
-#subscribe h1 {
+#download h1 {
     font-size: 1.5rem;
 }
 
-#subscribe span {
+#download span {
     margin-top: 20px;
     font-size: 0.8rem;
     line-height: 1.2rem;
 }
 
-#subscribe input[type=text] {
+#download input[type=text] {
     width: 300px;
     padding: 10px;
     box-sizing: border-box;
@@ -333,23 +334,25 @@ section h1 span {
     transition: all 0.5s;
 }
 
-#subscribe input[type=text]:focus,
-#subscribe input[type=text]:hover {
+#download input[type=text]:focus,
+#download input[type=text]:hover {
     background: #fff;
 }
 
-#subscribe button {
+#download a {
+    justify-content: center;
+    align-items: center;
     width: 250px;
     height: 75px;
     border: 3px solid #fff;
     border-radius: 50px;
     background: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #fff;
     transition: all 0.3s;
 }
 
-#subscribe button:hover {
+#download a:hover {
     background: #fff;
     font-weight: bold;
     color: #66D9B6;
