@@ -1,10 +1,6 @@
 /* Tablet ver. */
 @media(min-width : 768px) and (max-width : 1024px) {
 
-    * {
-        color: blue;
-    }
-
     html {
         font-size: 18px;
     }
@@ -14,9 +10,28 @@
     }
 
     header {
-        /* background: url("https://via.placeholder.com/1024x770") no-repeat center; */
-        height: 500px;
+        background: url("../img/intro-background.png") no-repeat left;
+        height: 400px;
         padding: 0 0 0 50px;
+    }
+    
+    header div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    header h1 {
+        max-width: 50%;
+        margin-bottom: 20px;
+    }
+
+    header p {
+        margin: 20px 0 0 0;
+    }
+
+    header img {
+        width: 500px;
     }
 
     /* Section */
@@ -26,47 +41,41 @@
 
     .overview {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-end;
         max-width: 80%;
-        padding: 150px 0 0;
+        padding: 50px 0 0 0;
+        position: relative;
     }
 
     .overview:nth-of-type(2) {
-        padding: 200px 0;
-    }
-
-    .overview .box-img {
-        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 50px 0 80px 0;
     }
 
     .overview:nth-of-type(1) .box-img {
-        left: 0;
-        bottom: 100px;
         margin-right: 0;
     }
     
     .overview:nth-of-type(2) .box-img {
-        right: 0;
-        bottom: -100px;
         margin-left: 0;
     }
-
-    .overview .box-txt {
-        position: absolute;
-        width: 50%;
-    }
-
+    
     .overview .circle {
         width: 500px;
         height: 500px;
     }
 
     .overview:nth-of-type(1) .circle {
-        left: -200px;
+        left: -300px;
     }
 
     .overview:nth-of-type(2) .circle {
-        right: -200px;
+        right: -300px;
+    }
+
+    .overview .box-txt {
+        width: 50%;
     }
 
     #demo h1,

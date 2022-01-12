@@ -60,10 +60,18 @@ nav i {
     display: none !important;
 }
 
+nav .logo {
+    width: 150px;
+}
+
 .down {
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 0 10px 20px rgba(100, 100, 100, 0.1);
     transition: all 0.3s;
+}
+
+.down-logo {
+    content: url('../img/logo-dark.png');
 }
 
 /* Intro */
@@ -72,28 +80,51 @@ header {
     justify-content: center;
     width: 100%;
     height: 770px;
-    padding: 100px 0 0 150px;
+    padding: 100px 0 0 130px;
     box-sizing: border-box;
-    background: url("https://via.placeholder.com/1920x770") no-repeat center;
-}
-
-header h1 {
-    font-size: 2.5rem;
-}
-
-header h1 span {
-    margin: 10px 0 70px 0;
-    display: block;
-    font-size: 1.5rem;
+    background: url("../img/intro-background.png") no-repeat center;
+    position: relative;
 }
 
 header div {
     align-items: center;
 }
 
+header h1 {
+    font-size: 2.5rem;
+    max-width: 45%;
+    margin-bottom: 50px;
+}
+
+header h1 span {
+    margin: 10px 0 0 0;
+    display: block;
+    font-size: 1.3rem;
+}
+
 header p {
     margin: 0 0 0 20px;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    color: #333;
+}
+
+header img {
+    position: absolute;
+    width: 800px;
+    left: 50%;
+}
+
+header button.join {
+    border: 2px solid #fff;
+    background: transparent;
+    box-shadow: none;
+    color: #fff;
+}
+
+header button.join:hover {
+    box-shadow: 0 0 10px #66D9B6;
+    background: #fff;
+    color: #66D9B6;
 }
 
 button.join {
@@ -101,7 +132,6 @@ button.join {
     height: 50px;
     border: none;
     border-radius: 50px;
-    /* background-image: linear-gradient(-20deg, #aaf0d1 0%, #8ddad5 100%); */
     background: #fff;
     box-shadow: 0 0 10px #ccc;
     font-size: 0.9rem;
@@ -134,12 +164,13 @@ section h1 span {
     position: relative;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 250px 50px 0;
+    padding: 20px 0 0 0;
     text-align: left;
 }
 
 .overview:nth-of-type(2) {
-    padding: 250px 50px;
+    flex-direction: row-reverse;
+    padding: 0 0 80px 0;
 }
 
 .overview h1 {
@@ -153,18 +184,7 @@ section h1 span {
 }
 
 .overview .box-img {
-    align-items: center;
     z-index: -5;
-}
-
-.overview .box-img img:nth-of-type(2) {
-    margin: 0 0 0 20px;
-}
-
-.overview .box-txt {
-    flex-direction: column;
-    justify-content: center;
-    width: 30%;
 }
 
 .overview:nth-of-type(1) .box-img {
@@ -173,6 +193,35 @@ section h1 span {
 
 .overview:nth-of-type(2) .box-img {
     margin-left: 100px;
+}
+
+.overview .box-img img {
+    width: 600px;
+}
+
+.overview .circle {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: #eee;
+    border-radius: 50%;
+    z-index: -100;
+}
+
+.overview:nth-of-type(1) .circle {
+    top: 0;
+    left: -100px;
+}
+
+.overview:nth-of-type(2) .circle {
+    top: 0;
+    right: -100px;
+}
+
+.overview .box-txt {
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
 }
 
 .overview .box-txt h1 {
@@ -196,23 +245,6 @@ section h1 span {
     z-index: -1;
 }
 
-.overview .circle {
-    position: absolute;
-    width: 600px;
-    height: 600px;
-    background: #eee;
-    border-radius: 50%;
-    z-index: -10;
-}
-
-.overview:nth-of-type(1) .circle {
-    left: -150px;
-}
-
-.overview:nth-of-type(2) .circle {
-    right: -150px;
-}
-
 #demo h1,
 #review h1 {
     margin-bottom: 70px;
@@ -231,7 +263,7 @@ section h1 span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #ccc;
+    background: linear-gradient(180deg, #aaf0d1 0%, #8ddad5 100%);
 }
 
 #demo video {
@@ -260,6 +292,7 @@ section h1 span {
 
 #review .on {
     box-shadow: 0 0 30px #66D9B6;
+    transform: translateY(-5px);
 }
 
 #review .card b {
@@ -289,6 +322,10 @@ section h1 span {
 
 #review > a:hover span {
     color: #66D9B6;
+}
+
+#review .card img {
+    width: 150px;
 }
   
 #download {
@@ -359,7 +396,7 @@ section h1 span {
 }
 
 footer {
-    padding: 50px 0;
+    padding: 50px 20px;
     background: #333;
     text-align: center;
 }
@@ -372,4 +409,9 @@ footer p {
 
 footer i {
     margin: 30px 2.5px;
+}
+
+footer img {
+    width: 150px;
+    opacity: 50%;
 }

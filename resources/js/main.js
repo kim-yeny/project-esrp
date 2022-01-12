@@ -1,11 +1,11 @@
 $(document).ready(function () {
 
     // (Plugin) Typing effect
-    new TypeIt("#intro > h1", {
-        waitUntilVisible: true,
-        speed: 70,
-        cursor: false,
-    }).go();
+    // new TypeIt("#intro > h1", {
+    //     waitUntilVisible: true,
+    //     speed: 70,
+    //     cursor: false,
+    // }).go();
 
     // (Plugin) Fade effect
     $(window).fadeThis();
@@ -24,6 +24,7 @@ $(document).ready(function () {
 
     // (Scroll) Change - nav
     var nav = $('nav');
+    var navLogo = $('nav .logo');
     var point = $('.overview');
     var pageTop = point.offset().top;
 
@@ -34,5 +35,8 @@ $(document).ready(function () {
     $(window).scroll(function () {
         var scrolled = $(window).scrollTop() >= pageTop;
         nav.toggleClass('down', scrolled);
+        navLogo.toggleClass('down-logo', scrolled);
+        // $(navLogo).attr('src', 'resources/img/logo-dark.png');
     });
+
 });

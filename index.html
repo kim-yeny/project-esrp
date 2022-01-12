@@ -9,6 +9,10 @@
     <meta name="description" content="EsRP">
     <title>Welcome EsRP</title>
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./resources/img/favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" href="./resources/img/favicon.ico" />
+
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 
@@ -32,7 +36,7 @@
 <body>
     <!-- Fixed Menu-bar -->
     <nav class="flex">
-        <a href="#intro"><img class="logo" src="https://via.placeholder.com/100x50" alt="로고"></a>
+        <a href="#intro"><img class="logo" src="./resources/img/logo-solid.png" alt="로고"></a>
         <div>
             <a href="#overview"><span>Overview</span></a>
             <a href="#demo"><span>Demo</span></a>
@@ -49,13 +53,14 @@
             <button class="join">멤버십 가입</button>
             <p>작지만 강한 EsRP와 함께 성장하세요.</p>
         </div>
+        <img src="./resources/img/intro-laptop-dark.png" alt="">
     </header>
 
     <!-- Overview of Service (1) -->
     <section class="overview flex" id="overview">
         <div class="box-img flex slide-left">
             <div class="circle"></div>
-            <img src="https://via.placeholder.com/500x400">
+            <img src="./resources/img/overview-1.png">
         </div>
         <div class="box-txt flex">
             <h1>간결한 구성과 조작</h1>
@@ -68,6 +73,10 @@
 
     <!-- Overview of Service (2) -->
     <section class="overview flex">
+        <div class="box-img flex slide-right">
+            <div class="circle"></div>
+            <img src="./resources/img/overview-2.png">
+        </div>
         <div class="box-txt flex">
             <h1>설치 필요 없이 웹에서</h1>
             <p>
@@ -75,40 +84,34 @@
                 EsRP는 100% 웹 기반 서비스로, 설치 과정 없이 오직 회원 인증만으로 서비스를 이용하실 수 있습니다.
             </p>
         </div>
-        <div class="box-img flex slide-right">
-            <div class="circle"></div>
-            <img src="https://via.placeholder.com/300x400">
-            <img src="https://via.placeholder.com/300x400">
-        </div>
     </section>
 
     <section class="flex" id="demo">
         <h1>DEMO<span>EsRP 서비스를 실제 시연한 영상입니다</span></h1>
-        <!-- <video src="https://kim-yeny.github.io/portfolio-web/project/erp-video.mp4" autoplay controls>EsRP 시연 영상</video> -->
-        <video src="" autoplay controls>EsRP 시연 영상</video>
+        <video src="./resources/esrp-demo.mp4" autoplay controls>EsRP 시연 영상</video>
     </section>
 
     <section id="review">
         <h1>REVIEW<span>EsRP 고객님들의 서비스 이용 후기</span></h1>
         <div class="flex">
             <div class="card">
-                <img src="https://via.placeholder.com/150x150">
-                <b>스타트업 CEO, 장*영 (27)</b>
+                <img src="./resources/img/review-human-1.jpg">
+                <b>스타트업 CEO, 장*영 (37)</b>
                 <p>창업 초창기에 헤매이던 날들이 아른거리네요. 진작에 알았더라면 덜 방황했을텐데요. 정말 좋은 서비스입니다.</p>
             </div>
             <div class="card">
-                <img src="https://via.placeholder.com/150x150">
-                <b>의류 브랜드, 안*진 (41)</b>
+                <img src="./resources/img/review-human-2.jpg">
+                <b>의류 브랜드, 안*진 (28)</b>
                 <p>사업장 규모가 커지면서 ERP 구매를 고려했지만 부담되는 가격 때문에 늘 망설였는데요. EsRP 덕분에 고민을 해결했습니다.</p>
             </div>
             <div class="card">
-                <img src="https://via.placeholder.com/150x150">
-                <b>프랜차이즈 카페, 이*서 (36)</b>
+                <img src="./resources/img/review-human-3.jpg">
+                <b>프랜차이즈 카페, 이*서 (31)</b>
                 <p>규모에 비해 직원이 많아 인사 관리가 필요해서 가입했어요. 가성비가 좋아서 여기저기 추천하고 다닌답니다.</p>
             </div>
             <div class="card">
-                <img src="https://via.placeholder.com/150x150">
-                <b>제조업체, 김*원 (53)</b>
+                <img src="./resources/img/review-human-4.jpg">
+                <b>제조업체, 김*원 (49)</b>
                 <p>간단한 사용법 덕분에 시스템을 익히기가 쉬웠어요. 누구나 부담없이 접근할 수 있는게 큰 장점인 것 같아요.</p>
             </div>
         </div>
@@ -121,10 +124,10 @@
         <div class="flex">
             <div>
                 <h1>
-                    아직도 서비스 가입을 망설이고 계시나요?
+                    아직도 가입을 망설이고 계시나요?
                     <span>
-                        EsRP를 조금 더 자세히 살펴보고 싶다면 서비스 상세 안내문을 다운로드해 보세요.
-                        프로그램 제작 과정과 이용 방법에 대한 디테일한 설명이 담겨있는 PDF 파일입니다.
+                        서비스 상세 안내문을 다운로드 받고, EsRP를 조금 더 자세히 살펴보세요.
+                        프로그램 제작 과정부터 이용 방법까지 디테일한 설명이 담겨있는 PDF 파일입니다.
                     </span>
                 </h1>
             </div>
@@ -133,7 +136,7 @@
     </section>
 
     <footer>
-        <img class="logo" src="https://via.placeholder.com/180x90">
+        <img class="logo" src="./resources/img/logo-solid.png">
         <div class="sns">
             <a href="#a">
                 <i class="fab fa-2x fa-github-square"></i>
@@ -149,7 +152,6 @@
     </footer>
 </body>
 
-<script src="https://unpkg.com/typeit@8.2.0/dist/index.umd.js"></script>
 <script src="./resources/js/main.js"></script>
 <script src="./resources/js/jquery.fadethis.js"></script>
 
