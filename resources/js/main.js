@@ -1,12 +1,4 @@
 $(document).ready(function () {
-
-    // (Plugin) Typing effect
-    // new TypeIt("#intro > h1", {
-    //     waitUntilVisible: true,
-    //     speed: 70,
-    //     cursor: false,
-    // }).go();
-
     // (Plugin) Fade effect
     $(window).fadeThis();
 
