@@ -65,7 +65,7 @@ nav .logo {
 }
 
 .down {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.95);
     box-shadow: 0 10px 20px rgba(100, 100, 100, 0.1);
     transition: all 0.3s;
 }
@@ -335,7 +335,6 @@ section h1 span {
 #download > div {
     justify-content: space-between;
     align-items: center;
-    /* width: 70%;/ */
     max-width: 1200px;
     margin: 0 auto;
     padding: 50px 120px;
@@ -397,13 +396,13 @@ section h1 span {
 
 footer {
     padding: 50px 20px;
-    background: #333;
+    background: #eee;
     text-align: center;
 }
 
 footer a,
 footer p {
-    color: #777;
+    color: #aaa;
     font-size: 0.8rem;
 }
 
@@ -412,6 +411,7 @@ footer i {
 }
 
 footer img {
-    width: 150px;
-    opacity: 50%;
+    width: 130px;
+    /* opacity: 50%; */
+    filter: invert(30%);
 }
