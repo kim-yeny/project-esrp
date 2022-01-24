@@ -412,6 +412,5 @@ footer i {
 
 footer img {
     width: 130px;
-    /* opacity: 50%; */
     filter: invert(30%);
 }

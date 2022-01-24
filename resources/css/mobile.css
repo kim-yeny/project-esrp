@@ -10,10 +10,10 @@
     }
 
     header {
-        background: url("../img/intro-background.png") no-repeat left;
+        background: url("../img/intro-background.png") no-repeat 45%;
         background-size: cover;
-        height: 400px;
-        padding: 50px;
+        height: fit-content;
+        padding: 30px 30px 80px;
     }
     
     header div {
@@ -102,7 +102,8 @@
     }
 
     #demo video {
-        width: 80%;
+        width: 100%;
+        border-radius: 20px;
     }
 
     #review > div {
@@ -116,6 +117,10 @@
         margin: 20px;
         padding: 50px 30px;
         box-sizing: content-box;
+    }
+
+    #review > a span {
+        color: #66D9B6;
     }
 
     #download {
@@ -142,7 +147,19 @@
 
     #download a {
         width: 100%;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+    }
+
+    footer {
+        padding: 30px;
+    }
+
+    footer i {
+        margin: 20px 2.5px;
+    }
+    
+    footer img {
+        width: 100px;
     }
 
 }
