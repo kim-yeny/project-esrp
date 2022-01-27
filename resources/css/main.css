@@ -76,6 +76,7 @@ nav .logo {
 
 /* Intro */
 header {
+    position: relative;
     flex-direction: column;
     justify-content: center;
     width: 100%;
@@ -83,7 +84,7 @@ header {
     padding: 100px 0 0 130px;
     box-sizing: border-box;
     background: url("../img/intro-background.png") no-repeat center;
-    position: relative;
+    background-size: cover;
 }
 
 header div {
@@ -268,6 +269,7 @@ section h1 span {
 
 #demo video {
     width: 50%;
+    max-width: 1200px;
     border-radius: 30px;
 }
 
