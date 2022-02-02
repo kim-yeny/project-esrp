@@ -28,7 +28,6 @@ $(document).ready(function () {
         var scrolled = $(window).scrollTop() >= pageTop;
         nav.toggleClass('down', scrolled);
         navLogo.toggleClass('down-logo', scrolled);
-        // $(navLogo).attr('src', 'resources/img/logo-dark.png');
     });
 
 });
